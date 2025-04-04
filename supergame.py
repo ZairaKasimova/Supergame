@@ -125,9 +125,9 @@ class Supergame:
 
         if self.attempts_left == 0:
             messagebox.showinfo("Игра окончена", f"Вы проиграли! Загаданное слово: {self.secret_word}")
-            self.play_after_lossing()
+            self.play_after_losing()
 
-    def play_after_lossing(self):
+    def play_after_losing(self):
         '''Resume the game after a loss.'''
         self.label_instruction.destroy()
         self.entry_character.destroy()
